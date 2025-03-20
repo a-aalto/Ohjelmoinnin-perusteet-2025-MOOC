@@ -1,4 +1,8 @@
 #Harjoitus 1
+from datetime import datetime
+
+#Tarkistetaan nykyinen vuosi
+vuosinyt = datetime.now().year
 
 print("Henkilötietotulostaja\n")
 print("Syötä henkilötiedot:")
@@ -12,7 +16,7 @@ osoite = input("Anna lähiosoitteesi:")
 postinumero = input("Anna postinumerosi:")
 kaupunki = input("Anna kaupunki:")
 maa = input("Anna maa:")
-syntymävuosi = input("Anna syntymävuosi:")
+syntymävuosi = int(input("Anna syntymävuosi:"))
 print()
 
 print ("KIITOS!\n\n")
@@ -30,7 +34,8 @@ print("OSOITE:")
 print("  "+osoite)
 print("  "+postinumero+" "+kaupunki)
 print("  "+maa)
-
+print("IKÄ:")
+print("  "+str(vuosinyt-syntymävuosi))
 
 
 
